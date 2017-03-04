@@ -11,6 +11,9 @@
             <reasion-item class="svg-item svg-item-1" addTurns="1"/>
             <reasion-item class="svg-item svg-item-4" addTurns="4"/>
         </div>
+        <div class="btn-container">
+            <svg-button  class="my-btn"/>
+        </div>
     </div>
 </template>
 <script>
@@ -18,13 +21,15 @@
     import MyButton from "./MyButton.vue"
     import ReasionHeader from "./ReasionHeader.vue"
     import ReasionItem from "./ReasionItem.vue"
+    import SvgButton from "./SvgButton.vue"
     export default {
         name: 'app',
         components: {
             MyButton,
             Hello,
             ReasionHeader,
-            ReasionItem
+            ReasionItem,
+            SvgButton
         }
     }
 </script>
@@ -113,6 +118,12 @@
         }
         100% {
             opacity: 1;
+        }
+    }
+    .btn-container{
+        margin-top: 44*@height;
+        .my-btn{
+            margin: 0 auto;
         }
     }
 </style>

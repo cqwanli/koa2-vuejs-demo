@@ -75,6 +75,8 @@
     //    document.querySelector('.st11').getTotalLength()
 </script>
 <style lang="less" rel="stylesheet/less">
+    @width: 0.01rem;
+    @height: 0.01rem;
     .item-outline {
         opacity: 0.4;
         fill: none;
