@@ -90,6 +90,7 @@
         .svg-item-@{counter} {
             .item-outline {
                 animation: itemOutlineAnimation 1s ease-in-out (2s+0.2*@counter) forwards;
+                -webkit-animation: itemOutlineAnimation 1s ease-in-out (2s+0.2*@counter) forwards;
             }
         }
         .itemOutlineMaker(@counter+1);
@@ -171,6 +172,7 @@
         .svg-item-@{counter} {
             .stroke-step1 {
                 animation: strokeStep1Animation 1.5s linear (2s+0.2*@counter) forwards;
+                -webkit-animation: strokeStep1Animation 1.5s linear (2s+0.2*@counter) forwards;
             }
         }
         .strokeStep1Builder(@counter+1);
@@ -179,11 +181,13 @@
     .strokeStep1Builder(1);
     .stroke-step2 {
         animation: strokeStep2Animation 2s linear infinite;
+        -webkit-animation: strokeStep2Animation 2s linear infinite;
     }
 
     .circle-1 {
         fill: #40D5D7;
         animation: shineAnimation 1s ease-in-out 2.5s forwards;
+        -webkit-animation: shineAnimation 1s ease-in-out 2.5s forwards;
     }
 
     .quxian {
@@ -204,6 +208,7 @@
         font-size: 32px;
         opacity: 0;
         animation: opacityInAnimation .3s ease-in 3.5s forwards;
+        -webkit-animation: opacityInAnimation .3s ease-in 3.5s forwards;
     }
 
     @keyframes opacityInAnimation {
@@ -228,11 +233,13 @@
         stroke-miterlimit: 10;
         stroke-dasharray: 0 220;
         animation: lineDashAnimation .5s linear 3.8s forwards;
+        -webkit-animation: lineDashAnimation .5s linear 3.8s forwards;
     }
 
     .circle-2 {
         fill: #40D5D7;
         opacity: 0;
         animation: opacityInAnimation .5s linear 4.3s forwards;
+        -webkit-animation: opacityInAnimation .5s linear 4.3s forwards;
     }
 </style>

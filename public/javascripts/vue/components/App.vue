@@ -61,6 +61,7 @@
             opacity: 0;
             width: 460*@width;
             animation: cloudAnimationKey 2s ease-in-out .2s forwards;
+            -webkit-animation: cloudAnimationKey 2s ease-in-out .2s forwards;
             z-index: 10;
             position: relative;
         }
@@ -89,6 +90,7 @@
     .svgItemMaker(@counter) when (@counter<5) {
         .svg-item-@{counter} {
             animation: shineAnimation .5s ease-in-out (2s+0.2*@counter) forwards;
+            -webkit-animation: shineAnimation .5s ease-in-out (2s+0.2*@counter) forwards;
         }
         .svgItemMaker((@counter+1))
     }

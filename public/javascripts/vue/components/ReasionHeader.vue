@@ -33,6 +33,7 @@
         fill: #FFFFFF;
         transform-origin:50% 50%;
         animation:sexangleLogo 1s ease-in-out .5s forwards;
+        -webkit-animation:sexangleLogo 1s ease-in-out .5s forwards;
         opacity: 0;
     }
 
@@ -44,6 +45,7 @@
         stroke-width:2;
         transform-origin:50% 50%;
         animation:sexangleLogoOutline 1s ease-in-out .5s forwards;
+        -webkit-animation:sexangleLogoOutline 1s ease-in-out .5s forwards;
         opacity: 0;
     }
     .six-text{
@@ -52,6 +54,7 @@
         letter-spacing: 2*@width;
         opacity: 0;
         animation:opacityAnimation 1s ease-in-out .5s forwards;
+        -webkit-animation:opacityAnimation 1s ease-in-out .5s forwards;
     }
     .rea-title{
         opacity: 0;
@@ -60,6 +63,7 @@
         font-size: 28px;
         letter-spacing: 3px;
         animation:opacityAnimation 1s ease-in-out .5s forwards;
+        -webkit-animation:opacityAnimation 1s ease-in-out .5s forwards;
     }
 
     .first-line {
@@ -68,6 +72,7 @@
         stroke-miterlimit: 10;
         stroke-dasharray: 0 347;
         animation:firstLineAnimation .5s ease-in-out 1.5s forwards;
+        -webkit-animation:firstLineAnimation .5s ease-in-out 1.5s forwards;
     }
 
     .poly-line {
@@ -76,6 +81,7 @@
         stroke-miterlimit: 10;
         stroke-dasharray: 0 109;
         animation: secondLineAnimation .2s ease-in-out 2s forwards ;
+        -webkit-animation: secondLineAnimation .2s ease-in-out 2s forwards ;
     }
     @keyframes opacityAnimation {
         0% {

@@ -26,6 +26,7 @@
         stroke-dasharray: 0 602;
         stroke-dashoffset: 301;
         animation: svgButtonStrokeAnimation .5s linear 4s forwards;
+        -webkit-animation: svgButtonStrokeAnimation .5s linear 4s forwards;
     }
     @keyframes svgButtonStrokeAnimation {
         from{
@@ -60,6 +61,7 @@
             outline: none;
             opacity: 0;
             animation: opacityInAnimation .5s linear 4s forwards;
+            -webkit-animation: opacityInAnimation .5s linear 4s forwards;
         }
     }
 </style>
