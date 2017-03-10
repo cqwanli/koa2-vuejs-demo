@@ -52,22 +52,19 @@
 </svg>
 </template>
 <script type="text/ecmascript-6">
+    import { mapState, mapActions } from 'vuex';
     export default {
         name: "reasion-item",
         props: ['addTurns'],
-        data: function () {
-            return {
-                step1: false,
-                step2: false
-            }
+        computed:{
+                ... mapState({
+                    step1:state=>state.reasionItems.step1,
+                    step2:state=>state.reasionItems.step2
+                })
         },
-        methods: {
+        methods:{
             startTheAnimation(){
-                this.step1 = true;
-                setTimeout(()=> {
-                    this.step1 = false;
-                    this.step2 = true;
-                }, 3500 + 200 * parseInt(this.addTurns));
+                this.$store.dispatch('startTheAnimation',this.addTurns);
             }
         }
     }
