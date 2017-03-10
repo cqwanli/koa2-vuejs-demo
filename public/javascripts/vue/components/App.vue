@@ -17,16 +17,12 @@
     </div>
 </template>
 <script>
-    import Hello from "./Hello.vue"
-    import MyButton from "./MyButton.vue"
     import ReasionHeader from "./ReasionHeader.vue"
     import ReasionItem from "./ReasionItem.vue"
     import SvgButton from "./SvgButton.vue"
     export default {
         name: 'app',
         components: {
-            MyButton,
-            Hello,
             ReasionHeader,
             ReasionItem,
             SvgButton
